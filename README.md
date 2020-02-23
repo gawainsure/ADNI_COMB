@@ -27,7 +27,7 @@
 
 #####    - `ADNIMERGE.csv` must be recruited in your shopping list, which is the essential foundation of this pipeline.
 
-#####    - If you want to reproduce our pipeline's result by focusing on your own `csv. files of interest`, it's necessary to name this list as `adnicomb_list.csv`, which of course should be in the format of `.csv`. It is also required to include the following entries by using the same naming method as `Table1`; case-sensitive, while order-insensitive. Otherwise, you can also hack into our `ADNI_COMB.ipynb` code to create your own method find and load csv. files.
+#####    - If you want to reproduce our pipeline's result by focusing on your own `csv. files of interest`, it's necessary to name this list as `adnicomb_list.csv`, which of course should be in the format of `.csv`. It is also required to include the following entries by using the same naming method as `Table1`; case-sensitive, while order-insensitive. Otherwise, you can also hack into our `ADNI_COMB.ipynb` code to create your own way finding and loading csv. files.
 
 #####    Table1: The essential entries in `adnicomb_list.csv` shopping list and 2 examples of csv. files
 csv    |  alias  |  date_entry  |  subject_entry  |  subject_type  |  recruit  |
