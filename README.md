@@ -22,6 +22,7 @@
 #####    - Our code `ADNI_COMB_LT.ipynb` is an optional choice for your research if you want a cleaner version of ADNI neuroimaging database. Its construction needs the output from `ADNI_COMB.ipynb` first. Apart from the size difference between `ADNI_COMB` and `ADNI_COMB_LT`, in `ADNI_COMB_LT` all clinical visits from one certain subject share a single `dataframe index`, while `ADNI_COMB` lets each clinical visit occupy its own index.
 
 
+
 #### 2. Creating a list of `csv. files of interest` for your own study purposes (shopping list)
 #####    - It is a shopping list created offline before starting everything as following. Generally speaking, it might be the only thing you need to DIY to reproduce this pipeline's result. Meanwhile, we Do provide our own list in this repository to save your trouble. Please, be our guest! :)
 
@@ -44,9 +45,12 @@ MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 #####    - Our example of 'adnicomb_list.csv' file is also provided in this repository, which includes all ADNI csv. files recruited by Ashish Raj lab, UCSF. They are all of the latest version by the time of 2019-9-23. This list covers almost all post-processed MRI (including T1, ASL, DTI, fMRI) and PET data available from ADNI data library, majority of CSF and plasma post-processed biomarker data; however, no specific neuropsychological dataset so far (¡because the cognition metric battery in `ADNIMERGE` is already so awsome!). In the future, we would rountinely add more datasets.
 
 
+
 #### 3. Reading ADNIMERGE.csv as Pandas DataFrame (done by `ADNI_COMB.ipynb`)
 #####    - This dataset contains routinely updated ADNI subjects' Diagnosis, Exam Date, and Cognitive Scores, etc. from all clinical visit time-points
 #####    - This dataset is truly helpful with data organization, in terms of localizing different types and sourses of data to a certain time window where they were collected.
+
+
 
 #### 4. Stacking dataframes of interest over/alongside ADNIMERGE.csv(done by `ADNI_COMB.ipynb`)
 #####    - Tansfer other `csv. files of interest` to Pandas DataFrame. According each DataFrame's `date_entry` and `subject_entry`, match its rows to `ADNIMERGE.csv` rows.
@@ -70,6 +74,7 @@ MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 #####    -Change `LeftCA4_DG` and `RightCA4_DG` to `LeftCA4DG` and `RightCA4DG`
 
 
+
 ## History versions:
 #### 1. ADNI_COMB_V1.1 (2019/9/25)
 #####    -Finishing csv-file-wise sampling checking, it is now safe to assume that all timepoints are all aligned finely along with ADNIMERGE.
@@ -91,5 +96,5 @@ MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 #####    -Changing all `AccumbensArea_SV` columns to `AccumbensArea_CV`
 #####    -Changing all `VentralDC_SV` columns to `VentralDC_CV`
 
-#### 4. ADNI_COMB_V1.5 (2019/10/9)
+#### 5. ADNI_COMB_V1.5 (2019/10/9)
 #####    -Moving all NaN's into a list within each cell of the DataFrame
