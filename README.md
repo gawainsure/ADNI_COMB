@@ -18,7 +18,7 @@
 #####    - Follow `DATA & SAMPLES` --> `ACCESS DATA AND SAMPLES` --> `DOWNLOAD` --> `Study Data` to search through ADNI data library
 #####    - In most cases, the processed ADNI data packages are in `csv.` format, and you need to first decide what sort of biological data you are interested in 
 #####    - Download all your `csv. files of interest` to anywhere belonging to the parent directory of our `ADNI_COMB.ipynb` file
-#####    - Our code `ADNI_COMB.ipynb` will refer to your shopping list to loacte all csv. files within its parent directory in the following step 
+#####    - Our code `ADNI_COMB.ipynb` will refer to your shopping list to loacte all csv. files within its parent directory 
 #####    - Our code `ADNI_COMB_LT.ipynb` is an optional choice for your research if you want a cleaner version of ADNI neuroimaging database. Its construction needs the output from `ADNI_COMB.ipynb` first. Apart from the size difference between `ADNI_COMB` and `ADNI_COMB_LT`, in `ADNI_COMB_LT` all clinical visits from one certain subject share a single `dataframe index`, while `ADNI_COMB` lets each clinical visit occupy its own index.
 
 
