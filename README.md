@@ -49,7 +49,7 @@ MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 #### 4. Stacking dataframes of interest over/alongside ADNIMERGE.csv(done by `ADNI_COMB.ipynb`)
 #####    - Tansfer other `csv. files of interest` to Pandas DataFrame. According each DataFrame's `date_entry` and `subject_entry`, match its rows to `ADNIMERGE.csv` rows.
 #####    - Law of subject matching: `RID` or `PTID` in `csv. files of interest` matches the same `RID` or `PTID` in `ADNIMERGE.csv`
-#####    - Law of date matching (1): if `date_entry` = `VISCODE` or `VICCODE2`, then `VISCODE` or `VICCODE2` in `csv. files of interest` matches the same `VICCODE` in `ADNIMERGE.csv`. `VICCODE2` is one certain clinical visit's number of months from baseline, translated from `VISCODE` (a less straightforward coding method), but in several ADNI csv. files (including `ADNIMERGE.csv`) `VICCODE2` entry is named as `VISCODE`, which should be noticed here.
+#####    - Law of date matching (1): if `date_entry` = `VISCODE` or `VICCODE2`, then `VISCODE` or `VICCODE2` in `csv. files of interest` matches the same `VICCODE` in `ADNIMERGE.csv`. `VICCODE2` is one certain clinical visit's number of months from baseline, translated from `VISCODE` (a less straightforward coding method), but in several ADNI csv. files (including `ADNIMERGE.csv`) their so-called `VICCODE` entry is actually `VISCODE2` in nature, which should be noticed here.
 #####    - Law of date matching (2): if `date_entry` = numeric date in format of `MM/DD/YYYY` or `YYYY/MM/DD`, then `date_entry` in `csv. files of interest` matches the nearest `date_entry` in `ADNIMERGE.csv`.
 #####  
 #####  
