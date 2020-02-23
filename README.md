@@ -58,12 +58,12 @@ MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 #####    - Except for `ADNI_EUROIMMUN.csv` (version 2019-4-18), which raw data has a double copy of all rows within the same file. We just simply deleted all the redundant records in site.
 ##### 
 #### 2. Concerning multiple rows from `csv. files of interest` match one single row in `ADNIMERGE.csv`
-#####    - Several ADNI studties might use different protocols to process the same data and align them in diffrent rows, although these records actually match one single row/day/vist in `ADNIMERGE.csv`. We insert single visit's multiple rows into a list and put it in a DataFrame's cell. For convience purposes, all cells in our `adnicomb` are in format of python list whatever it contains one single record or multiple records, thus when calling upon data from DataFrame cells in the future, we need treat them equally as list type (¡except for the data from `ADNIMERGE.csv`!)
+#####    - Several ADNI studties might use different protocols to process the same data and align them in diffrent rows, although these records actually correspond to one single row in `ADNIMERGE.csv`. We insert single visit's multiple rows into a list and put it into a DataFrame's cell. For convience purposes, all cells in our `adnicomb` are in format of python list whatever it contains one single record or multiple records, thus when calling upon data from DataFrame cells in the future, we need treat them equally as python list(¡except for the data from `ADNIMERGE.csv`!)
 ##### 
-#### 3. Brain region naming convention (Some original region names from ADNI database have been changed in `ADNI_COMB`)
+#### 3. Brain region naming convention (some region names originally from ADNI database have been changed in `ADNI_COMB`)
 #####    -Change `Left_PARSFR` and `Right_PARSFR` to `LeftInferiorFrontal` and `RightInferiorFrontal`, because according to the author's limited anatomical knowledge I guess the so-called `Pars Frontal` here is actually pars opercularis, pars triangularis, and pars orbitalis, whose combination is inferior frontal lobe.
-#####    -Change `LeftCA2_3` and `RightCA2_3` to `LeftCA23` and `RightCA23`.
-#####    -Change `LeftCA4_DG` and `RightCA4_DG` to `LeftCA4DG` and `RightCA4DG`
+#####    -Change `LeftCA2_3` and `RightCA2_3` to `LeftCA23` and `RightCA23`, just making life easier.
+#####    -Change `LeftCA4_DG` and `RightCA4_DG` to `LeftCA4DG` and `RightCA4DG`, just making life easier.
 ##### 
 ##### 
 ## History versions:
@@ -71,10 +71,10 @@ MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 #####    -Finishing csv-file-wise sampling checking, it is now safe to assume that all timepoints are all aligned finely along with ADNIMERGE.
 ##### 
 #### 2. ADNI_COMB_V1.2 (2019/10/4)
-#####    -Unifying all FreeSufer-resulted brain region naming conventions, according to one created ADNICOMB naming dictionary
+#####    -Unifying all FreeSufer-resulted brain region naming conventions, according to one created ADNICOMB naming dictionary in the parent directory
 ##### 
 #### 3. ADNI_COMB_V1.3 (2019/10/5)
-#####    -Fixing one mistake of extra underscores after several naming conventions in `adnicomb_naimng_convention.csv`
+#####    -Fixing one mistake concerning extra underscores after several naming conventions in `adnicomb_naimng_convention.csv`
 ##### 
 #### 4. ADNI_COMB_V1.4 (2019/10/8)
 #####    -Changing all `CereBellumCortex_SV` columns to `CereBellumCortex_CV`
@@ -88,4 +88,4 @@ MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 #####    -Changing all `VentralDC_SV` columns to `VentralDC_CV`
 ##### 
 #### 5. ADNI_COMB_V1.5 (2019/10/9)
-#####    -Moving all NaN's into a list within each cell of the DataFrame
+#####    -Moving all NaN's into one list within each cell of the DataFrame
