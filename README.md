@@ -31,7 +31,7 @@
 
 #####    Table1: The essential entries in `adnicomb_list.csv` shopping list and 2 examples of csv. files
 csv    |  alias  |  date_entry  |  subject_entry  |  subject_type  |  recruit  |
-:----: | :-----: | :----------: | :-------------: | :------------: | :-------: |
+---- | ----- | ---------- | ------------- | ------------ | ------- |
 ADNIMERGE.csv | merge|   EXAMDATE  |     RID      |       RID      |     1     |
 MRILIST.csv   |mrimeta|  SCANDATE  |   SUBJECT    |      PTID      |     1     |
 ###### `csv`: the csv. file's name of your research interest, subject to change according to version update from ADNI website
