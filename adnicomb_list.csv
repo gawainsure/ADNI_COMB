@@ -1,0 +1,43 @@
+Category,csv,alias,date_entry,subject_entry,subject_type,ADNI_1,ADNI_Go,ADNI_2,ADNI_3,Comments,version,recruit
+Core,ADNIMERGE.csv,merge,EXAMDATE,RID,RID,1,1,1,1,"including dx, cog, csf_proteins, apoe, etc",N/A (2019/9 downloaded from ADNI),1
+,MRILIST.csv,mrimeta,SCANDATE,SUBJECT,PTID,1,1,1,1,including IMAGE_ID,N/A (2019/9 downloaded from ADNI),1
+,PET_META_LIST.csv,petmeta,Scan Date,Subject,PTID,1,1,1,1,including IMAGE_ID,N/A (2019/9 downloaded from ADNI),1
+CSF,ADNI_HULAB.csv,csfhu,EXAMDATE,RID,RID,1,,,,"Including csf_proteins, and inflammation_factors",2019-01-04,1
+,UPENNBIOMK9_04_19_17.csv,csfup9,EXAMDATE,RID,RID,1,1,1,,"csf_proteins (abeta, ptau, tau)",2019-07-29,1
+,UPENNBIOMK10_07_29_19.csv,csfupx,DRAWDATE,RID,RID,,,,1,"csf_proteins (abeta40, abeta42, tau, and ptau)",2017-04-19,1
+Gene,DESIKANLAB.csv,desikan,STATIC,RID,RID,1,1,1,,only two combined scores,2018-08-08,1
+MRI,UCSFFSL_02_01_16.csv,lv15one,EXAMDATE,RID,RID,1,,,,1.5T longitudinal T1 processed by FreeSurfer,2016-02-01,1
+,UCSFFSL51ALL_08_01_16.csv,lv30two,EXAMDATE,RID,RID,,1,1,,3.0T longitudinal T1 processed by FreeSurfer,2016-08-01,1
+,UCSFFSX_11_02_15.csv,xv15one,EXAMDATE,RID,RID,1,,,,1.5T cross-sectional T1 processed by FreeSurfer,2015-11-02,1
+,UCSFFSX51_ADNI1_3T_02_01_16.csv,xv30one,EXAMDATE,RID,RID,1,,,,3.0T cross-sectional T1 processed by FreeSurfer,2016-02-01,1
+,UCSFFSX51_08_27_19.csv,xv30two,EXAMDATE,RID,RID,,1,1,,3.0T cross-sectional T1 processed by FreeSurfer,2019-08-27,1
+,UCSFFSX6_08_27_19.csv,xv3three,EXAMDATE,RID,RID,,,,1,3.0T cross-sectional T1 processed by FreeSurfer,2019-08-27,1
+,MAYOADIRL_MRI_FMRI_NFQ_09_17_19.csv,dmn,SCANDATE,RID,RID,,1,1,1,Default Mode Network functional MRI,2019-09-17,1
+,MRI_INFARCTS_11_16_15.csv,infarct,EXAMDATE,RID,RID,1,1,1,,infarct lesion detection and which lobe it is located at,2015-11-16,1
+,ADNI_DTIROI_04_30_19.csv,dti,EXAMDATE,RID,RID,,1,1,,"FA, MD, RD, and AD values of 57 WM tracts",2019-04-30,1
+,UCSFASLFS_11_02_15_V2.csv,asl,EXAMDATE,RID,RID,,1,1,,Arterial Spin Labeling,2015-11-02,1
+,TBM_08_20_15.csv,tbm,EXAMDATE,RID,RID,1,1,1,,Tensor-based morphometry,2015-08-20,1
+PET,UCBERKELEYAV1451_08_27_19.csv,taunpvc,EXAMDATE,RID,RID,,,,1,Tau SUVR and cortical volume without partial volume correction,2019-08-27,1
+,UCBERKELEYAV1451_PVC_08_27_19.csv,tauwpvc,EXAMDATE,RID,RID,,,,1,Tau SUVR and cortical volume with partial volume correction,2019-08-27,1
+,UCBERKELEYAV45_08_27_19.csv,av45,EXAMDATE,RID,RID,,1,1,1,Amyloid SUVR and cortical volume,2019-08-27,1
+,UCBERKELEYFBB_08_27_19.csv,fbb,EXAMDATE,RID,RID,,,,1,only Amyloid SUVR without cortical volume  NOT complete either!,2019-08-27,1
+,UCBERKELEYFDG_08_27_19.csv,fdg,EXAMDATE,RID,RID,1,1,1,,too limited brain regions  not that helpful,2019-08-27,1
+Metab,ADMCBARCELONAPURINE.csv,purine,STATIC,RID,RID,1,,,,Plasma purine  no time-points! Useless!,2015-12-03,1
+,ADMC_BA_POSTPROC_06_28_18.csv,bileacid,VISCODE,RID,RID,1,1,1,,Plasma bile acid  very hard to decide the baseline time-point!!,2018-06-28,1
+,ADMCPATIENTDRUGCLASSES_20170512.csv,drug,VISCODE2,RID,RID,1,1,1,,Drug usage  very very interesting to sketch a profile of patient heath status,2017-05-12,1
+,ADMCDUKEP180FIA_01_15_16.csv,p180fi1,STATIC,RID,RID,1,,,,Flow Injection Analysis of plasma (bl only),2016-01-15,1
+,ADMCDUKEP180FIAADNI2GO.csv,p180fi2,STATIC,RID,RID,,1,1,,Flow Injection Analysis of plasma (bl only),2017-04-12,1
+,ADMCDUKEP180UPLC_01_15_16.csv,p180lc1,STATIC,RID,RID,1,,,,Ultra performance liquid chromatography of plasma (bl only),2016-01-15,1
+,ADMCDUKEP180UPLCADNI2GO.csv,p180lc2,STATIC,RID,RID,,1,1,,Ultra performance liquid chromatography of plasma (bl only),2017-04-12,1
+,ADNINIGHTINGALE_20180827.csv,lipopro,STATIC,RID,RID,1,1,1,,NMR Lipoprotein Analysis of plasma (bl only) (looks promising),2018-08-27,1
+,ADMCPDIPEPEAKHEIGHTS_07_12_17.csv,etn,STATIC,RID,RID,1,1,1,,Quantitate 4 phosphatidylethanolamines (PtdEtn) and 4 plasmenylethanolamine (PlsEtn) glycerophospholipids species in plasma,2017-07-12,1
+,APOERES.csv,apoe,STATIC,RID,RID,1,1,1,1,APOE genotypes,,1
+,batemanlab_20190621.csv,ab42_40,STATIC,RID,RID,,1,1,,Plasma Abeta42/Abeta40 Ratio,2019-06-21,1
+,ADNI_BLENNOWPLASMANFL_10_03_18.csv,nfl1,EXAMDATE,RID,RID,1,,,,plasma neurofilament light,2018-10-03,1
+,ADNI_BLENNOWPLASMANFLLONG_10_03_18.csv,nfl2,EXAMDATE,RID,RID,,1,1,,plasma neurofilament light,2018-10-03,1
+,ADNI_ZHANG.csv,csfzhang,EXAMDATE,RID,RID,1,1,1,,"CSF alpha-synuclein, ps129, and hemoglobin ",2016-09-21,1
+,ADNI_HAASS_WASHU_LAB.csv,s_trem,EXAMDATE,RID,RID,1,1,1,,CSF soluble trigerring receptor expressed on myeloid cells and progranulin (lovely!),2018-03-16,1
+,ADNI_EUROIMMUN.csv,csfeuro,EXAMDATE,RID,RID,1,1,1,,"CSF beta-amyloid 40 and 42, but seemingly not complete/ redundant data exist in raw csv file",2019-04-18,1
+,FAGANLAB_07_15_2015.csv,csffagan,EXAMDATE,RID,RID,1,,,,"Visinin-like protein-1, chitinase-3 like-1, synaptosomal-associated protein 25 and neurogranin",2015-07-15,1
+,UPENNMSMSABETA.csv,msms1,DRAWDATE,RID,RID,1,,,,"CSF abeta40, abeta42, and abeta38",2016-08-29,1
+,UPENNMSMSABETA2.csv,msms2,EXAMDATE,RID,RID,,1,1,,"CSF abeta40, abeta42, and abeta38",2018-06-20,1
